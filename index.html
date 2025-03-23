@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="card.css">
+    <title>Essaycard</title>
+  
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+          <h3>Essaycard</h3>
+        </div>
+        <div class="nav-links">
+           
+                <label for="language-select"><div class="color-wwhite">Language:</div></label>
+                <select id="language-select" class="nav-select" onchange="changeLanguage(this.value)">
+                    <option value="index.html" selected>English</option>
+                    <option value="index-ch.html">中文</option>
+                    <!-- Add more languages here -->
+          
+            </select>
+     
+        </div>
+    </nav>
+    <section class="hero">
+   <h1>Essaycard</h1>
+   <h2>Introductions to the deep knowledge</h2>
+
+   <section class="courses">
+    <div class="cards-container">
+      <a href="science.html" class="card">
+        <strong>01</strong>
+        <h3>Science</h3>
+        <p>Math Physics Chemistry Biology</p>
+        <p>Explore the mysteries of the world</p>
+      </a>
+      <!-- 重复3个相同结构的card -->
+      <a href="#" class="card">
+        <strong>02</strong>
+        <h3>Computer</h3>
+        <p>Pursue human progress</p> 
+      </a>
+       <a href="#" class="card">
+        <strong>03</strong>
+        <h3>Humanities</h3>
+        <p>History Psilosophy Geometry</p>
+        <p>Seeking spiritual solace</p> 
+      </a> 
+      <a href="#" class="card">
+        <strong>04</strong>
+        <h3>Our Team</h3>
+    
+      </a>
+    </div>
+    
+  </section>
+    </section>
+ 
+    
+      
+
+
+ 
+    <script>
+        function changeLanguage(language) {
+            window.location.href = language;
+        }
+    </script>
+</body>
+</html>

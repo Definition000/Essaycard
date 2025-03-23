@@ -1,0 +1,83 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    background: linear-gradient(135deg, #aabbcd, #83b7f2); /* 新背景色 */
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+/* Left Sidebar */
+.sidebar-left {
+    height: 100%;
+    top: 3.5rem;
+    position: fixed;
+    width: 10%;
+    background-color:#cdd4d5; /* 边栏背景色 */
+    padding: 1rem;
+    box-shadow: var(--shadow-md);
+}
+
+.sidebar-left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-left li {
+    margin-bottom: 1rem;
+}
+
+.sidebar-left a {
+    text-decoration: none;
+    color: var(--primary-900);
+    font-weight: bold;
+}
+
+.sidebar-left a:hover {
+    color: var(--accent-400);
+}
+
+/* Right Sidebar */
+.sidebar-right {
+    width: 20%;
+    background-color: var(--neutral-100); /* 边栏背景色 */
+    padding: 1rem;
+    box-shadow: var(--shadow-md);
+}
+
+.sidebar-right ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.sidebar-right a {
+    text-decoration: none;
+    color: var(--primary-900);
+    font-weight: bold;
+}
+
+.sidebar-right a:hover {
+    color: var(--accent-400);
+}
+
+/* Hero Content */
+.hero-content {
+    width: 60%;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.hero-content h1 {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
